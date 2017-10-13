@@ -17,11 +17,11 @@ console.log('in rc')
 // var Bex = new Ref('Bex', 1, 3, 2);
 
 
-var refArray = []; // add refs here from DOM
+vm.refArray = []; // add refs here from DOM
 
 // console.log(refArray[0]);
 // var test = refArray[0].jrRate;
-var roster = []; // final roster
+vm.roster = []; // final roster
 
 vm.addRef = function() {
     var newRef = {
@@ -30,8 +30,8 @@ vm.addRef = function() {
         jrRate: vm.jrIn,
         oprRate: vm.oprIn,
     }
-    refArray.push(newRef);  
-    console.log(refArray);
+    vm.refArray.push(newRef);  
+    console.log(vm.refArray);
 };
 
 // vm.findRoster = function () { //generates roster
