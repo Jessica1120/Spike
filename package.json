@@ -1,0 +1,23 @@
+{
+  "name": "spike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jessica1120/Spike.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jessica1120/Spike/issues"
+  },
+  "homepage": "https://github.com/Jessica1120/Spike#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
