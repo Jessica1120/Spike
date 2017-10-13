@@ -21,7 +21,12 @@
             <ul>
                 <li ng-repeat="ref in RC.refArray">{{ref.name}}</li>
             </ul>
+            <button type="button" ng-click="RC.findRoster()">Generate</button>
         </div>    
+        <div>
+            <h2>Roster</h2>
+            <p>IPR: {{RC.roster[0].name}} </p> 
+        </div>
     </div>
 
 </body>

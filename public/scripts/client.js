@@ -34,33 +34,31 @@ vm.addRef = function() {
     console.log(vm.refArray);
 };
 
-// vm.findRoster = function () { //generates roster
+vm.findRoster = function () { //generates roster
+    console.log('test')
+    vm.findIpr = function() {
+        for (let i=0; i <vm.refArray.length; i++) {
+            if (3 <= vm.refArray[i].iprRate) {
+                vm.roster.push(vm.refArray[i]);
+                vm.refArray.splice(i, 1);
+            }
+        } 
+    };
 
+    // function findJr() {
+    //     for (let i=0; i <refArray.length; i++) {
+    //         if (3 <= refArray[i].jrRate) {
+    //             roster.push(refArray[i]);
+    //             refArray.splice(i, 1);
+    //         }
+    //     } 
+    // };
+    vm.findIpr();
+    // findJr();
+    console.log('remaining refArray', vm.refArray);
+    console.log('the final roster', vm.roster);
+}
 
-    
-//     function findIpr() {
-//         for (let i=0; i <refArray.length; i++) {
-//             if (3 <= refArray[i].iprRate) {
-//                 roster.push(refArray[i]);
-//                 refArray.splice(i, 1);
-//             }
-//         } 
-//     };
-
-//     function findJr() {
-//         for (let i=0; i <refArray.length; i++) {
-//             if (3 <= refArray[i].jrRate) {
-//                 roster.push(refArray[i]);
-//                 refArray.splice(i, 1);
-//             }
-//         } 
-//     };
-//     findIpr();
-//     findJr();
-//     console.log('remaining refArray', refArray);
-//     console.log('the final roster', roster);
-// }
-
-// findRoster();
+// vm.findRoster();
 
 });
