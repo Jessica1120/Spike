@@ -2,7 +2,7 @@
 <div>
     <h2>Dogs</h2>
     <ul>
-        <li ng-repeat="dog in hc.dogArray">{{}}</li>
+        <li ng-repeat="dog in hc.dogArray.data">{{dog.name}}</li>
         </ul>
         <button type="button" class="btn" ng-click="hc.getOwners()">Get Owners</button>
 </div>

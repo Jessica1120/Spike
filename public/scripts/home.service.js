@@ -12,6 +12,7 @@ myApp.service('HomeService', function($http, $location){
         }).then(function(res) {
             console.log('HS Get response', res)
             self.dogArray.data = (res.data)
+            console.log('HS Get response.data', self.dogArray.data)
         })
     }
 
