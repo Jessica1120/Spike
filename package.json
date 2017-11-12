@@ -2,7 +2,7 @@
   "name": "spike",
   "version": "1.0.0",
   "description": "",
-  "main": "client.js",
+  "main": "pool.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Jessica1120/Spike#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "angular-route": "^1.6.6",
+    "angularjs": "0.0.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
   }
 }

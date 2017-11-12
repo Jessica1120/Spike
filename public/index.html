@@ -1,33 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src = "./vendors/angular.js"></script>
-    <script src = "./scripts/client.js"></script>
-    <title>Document</title>
-</head>
-<body ng-app="myApp">
-    <div ng-controller="RefController as RC">
-        <div>
-            Add ref: <input type=text ng-model="RC.nameIn">
-            <input type="number" ng-model="RC.iprIn">
-            <input type="number" ng-model="RC.jrIn">
-            <input type="number" ng-model="RC.oprIn">
-            <button type="button" ng-click="RC.addRef()">Add Ref</button>     
-        </div>
-        <div>
-            <ul>
-                <li ng-repeat="ref in RC.refArray">{{ref.name}}</li>
-            </ul>
-            <button type="button" ng-click="RC.findRoster()">Generate</button>
-        </div>    
-        <div>
-            <h2>Roster</h2>
-            <p>IPR: {{RC.roster[0].name}} </p> 
-        </div>
-    </div>
-
+<html>
+    <head>
+        <title>Spike</title>
+        
+        <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+        <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="scripts/client.js"></script>
+        <script type="text/javascript" src="scripts/home.controller.js"></script>
+        <script type="text/javascript" src="scripts/redirect.controller.js"></script>
+        <script type="text/javascript" src="scripts/home.service.js"></script> 
+        <script type="text/javascript" src="scripts/redirect.service.js"></script>
+    </head>
+<body ng-app = "myApp">
+ <ng-view>
+     
+ </ng-view>
 </body>
-</html>
